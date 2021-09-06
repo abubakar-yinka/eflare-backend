@@ -22,19 +22,19 @@ const cors = require('cors')
 app.use(cors())
 
 //Routes
-if (process.env.NODE_ENV === 'production') {
-    //Express will serve up production assets
-    app.use(express.static('client/dist'));
+// if (process.env.NODE_ENV === 'production') {
+//     //Express will serve up production assets
+//     app.use(express.static('client/dist'));
 
-    //Express will serve up the index.html file
-    //if it doesn't recognize the route i.e Handles any requests that don't match the ones above
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
-    });
-}
+//     //Express will serve up the index.html file
+//     //if it doesn't recognize the route i.e Handles any requests that don't match the ones above
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
+//     });
+// }
 
-app.use(express.static('client/dist'));
-// app.use(express.static(path.join(__dirname, 'client', 'dist')));
+// app.use(express.static('client/dist'));
+// // app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 app.use('/', require('./routes/index'))
 
