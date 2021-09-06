@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abubakar-yinka/eflare-hackathon.git"
+    "url": "git+https://github.com/abubakar-yinka/eflare-backend.git"
   },
   "author": "Abubakar Ibrahim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abubakar-yinka/eflare-hackathon/issues"
+    "url": "https://github.com/abubakar-yinka/eflare-backend/issues"
   },
-  "homepage": "https://github.com/abubakar-yinka/eflare-hackathon#readme",
+  "homepage": "https://github.com/abubakar-yinka/eflare-backend#readme",
   "dependencies": {
     "connect-mongo": "^4.5.0",
     "cors": "^2.8.5",
